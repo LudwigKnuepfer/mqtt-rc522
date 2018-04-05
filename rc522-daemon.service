@@ -1,0 +1,10 @@
+[Unit]
+Description = RC522 to MQTT gateway service
+After = network.target
+
+[Service]
+ExecStart = /usr/local/bin/pi_mqtt_rc522
+ProtectSystem = yes
+
+[Install]
+WantedBy = multi-user.target
